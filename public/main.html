@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="thumb.png">
+    <title>Zoom Shortcut Maker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer="" src="script.js"></script>
+</head>
+<body>
+    <!--- (1인)개발: 10416 심연호 -->
+    <div class="box1">
+        <p id="text1">Create a Zoom Shortcut URL !</p>
+        <form method="post" class="inputForm">
+            <p>
+                <input type="number" value="" placeholder="Code" id="code">
+            </p>
+            <p>
+                <input type="password" value="" placeholder="Password  (optional)" id="pw">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </p>
+            <p id="nameBox">
+                <input type="text" value="" placeholder="Shortcut name" id="sName">
+                <i class="bi bi-question-circle" id="help"></i>
+            </p>
+            <p id="tt">
+                <span id="tooltip" class="hostname"></span>
+                <span id="tooltip" style="color:red;">HERE</span>
+            </p>
+            <button type="submit" id="submit" class="submit">Next</button>
+            <button style="display:none" id="copy" class="copy">Copy</button>
+            </div>
+        </form>
+    </div>
+    <iframe name="iframe1" style="display:none;"></iframe>
+</body>
+</html>

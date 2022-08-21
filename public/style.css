@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	line-height: 3.5;
+	background-color: #eeeeee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.box1 {
+	animation: fadeInUp 0.93s;
+	width: 27%;
+	background-color: #fff;
+	border-radius: 10px;
+    box-shadow: 0px 1px 2px 2.5px rgba(0, 0, 0, 0.08);
+	max-width: 600px;
+	margin: 10px auto;
+	padding: 1rem 2.7rem;
+}
+
+#nameBox {
+	display: none;
+}
+
+#text1 {
+	font-style: normal;
+	font-size: 1.4rem;
+	line-height: 35px;
+	color: #111;
+	text-align: center;
+}
+
+input {
+	padding: 13px;
+	font-size: 14px;
+	border-radius: 5px;
+	outline: none;
+	width: 100%;
+	background: rgba(217, 217, 217, 0.45);
+	border-radius: 15px;
+	border: 0px;
+}
+
+input #code:focus {
+	background-color: yellow;
+}
+
+input::placeholder {
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.33);
+}
+
+.inputForm i {
+	font-size: 17px;
+	margin-left: -35px;
+	cursor: pointer;
+}
+
+.inputForm i[class='bi bi-question-circle']{
+	cursor: default;
+}
+
+#tt {
+	font-size: 0px;
+	display:none;
+	position: absolute;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 1px 2px 2.5px rgba(0, 0, 0, 0.08);
+	padding: 0.3px 7px;
+}
+
+#tt #tooltip {
+	font-size: 12px;
+}
+
+button {
+    box-sizing: border-box;
+    width: 25%;
+	margin-left: 75.5%;
+    padding: 2.5%;
+	background: #707CEA;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+	font-weight: 700;
+	border-radius: 11px;
+}
+
+button:hover {
+    background: #5c6bf5;
+    cursor: pointer;
+}
+.submit{
+	margin-top:10px;
+}
+
+.copy{
+	margin-left: 34.5%;
+	width: 30%;
+	margin-top:10px;
+	background: #8ef07a;
+}
+.copy:hover {
+	background: #6bcc58;
+    cursor: pointer;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translateZ(0);
+	}
+}
+
+@keyframes moveAround {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	20% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	66% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+	.box1{
+		width: 80%;
+	}
+	.copy{
+		margin-left: 30%;
+		width: 40%
+	}
+}
+
+@media only screen and (min-width: 1136px) {
+	.box1{
+		width: 30%;
+	}
+}
