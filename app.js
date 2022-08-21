@@ -1,9 +1,9 @@
-const PORT = 80;
-
 const express = require('express');
 const app = express();
 const urlData = {};
 var bodyParser = require('body-parser');
+
+require('dotenv').config();
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
@@ -62,6 +62,6 @@ app.post('/makeZoom',function(req,res){
 	res.redirect('/z/'+name);
 })
 
-app.listen(PORT, function() {
-	console.log('Express server has started on port '+PORT);
+app.listen(process.env.PORT, function() {
+	console.log('Express server has started on port '+process.env.PORT);
 });
